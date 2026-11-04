@@ -110,12 +110,19 @@ nav a:hover, nav a:active{
 	nav a{
 		float: left;
 		width: 25%;
-		/* box sizing can make the padding and border not count tward the element's size */
+		/* box sizing can make the padding and border not count toward the element's size */
 		box-sizing: border-box;
 	}
 
 	/* make sure the content goes below the floared stuff */
 	main{
 		clear: both;
+	}
+}
+
+/* order matters - put your smallest media qeries first */
+@media screen and (min-width:800px){
+	nav a{
+		background-color: coral;
 	}
 }
